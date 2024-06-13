@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/assets/css/style.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+  
+  <header class="relative flex flex-wrap w-full py-4 text-sm bg-white sm:justify-start sm:flex-nowrap">
+    <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
+      <div class="flex items-center justify-between">
+        <a class="flex-none text-xl font-semibold" href="#">
+          <img src="/src/assets/img/logo-main.png" alt="Logo" class="w-20">
+        </a>
+        <div class="sm:hidden">
+          <button type="button" class="inline-flex items-center justify-center p-2 text-gray-800 bg-white border border-gray-200 rounded-lg shadow-sm hs-collapse-toggle gap-x-2 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-with-mega-menu" aria-controls="navbar-with-mega-menu" aria-label="Toggle navigation">
+            <svg class="flex-shrink-0 hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="flex-shrink-0 hidden hs-collapse-open:block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="navbar-with-mega-menu" class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow sm:block">
+        <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+          <a class="font-semibold text-gray-600" href="/index.html">Home</a>
+          <a class="font-semibold text-gray-600 hover:text-gray-400" href="./about.html">About us</a>
+          <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] ">
+            <button id="hs-mega-menu-basic-dr" type="button" class="flex items-center w-full font-semibold text-gray-600 hover:text-gray-400 ">
+              Courses
+              <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+  
+            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 sm: before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-primatext-primary" href="/courses/listening/listening-practice-1.html">
+                Listening
+              </a>
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-primatext-primary" href="/courses/writing/reading-practice-1.html">
+                Writing
+              </a>
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-primatext-primary" href="/courses/reading/reading-practice-1.html">
+                Reading
+              </a>
+            </div>
+          </div>
+          <a class="font-semibold text-primary hover:text-gray-400" href="/contact.html">Contact us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="w-11/12 mx-auto mt-10 mb-20 md:w-6/12 md:mt-10 ">
+        <div class="">   
+          <header class="mb-10 text-center">
+            <h2 class="text-3xl font-semibold text-primary md:text-4xl">Contact Us</h2>
+          </header>
+
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+            <form action="">
+              <div class="mb-5">
+                <input type="text" name="name" placeholder="Fullname" class="w-full p-2 px-5 text-xl font-light border-2 rounded-md border-primary placeholder:text-lg">
+              </div>
+              <div class="mb-5">
+                <input type="email" name="email" placeholder="Email Address" class="w-full p-2 px-5 text-xl font-light border-2 rounded-md border-primary placeholder:text-lg">
+              </div>
+              <div class="mb-5">
+                <textarea rows="6" name="message" placeholder="Email Address" class="w-full p-2 px-5 text-xl font-light border-2 rounded-md border-primary placeholder:text-lg"></textarea>
+              </div>
+              <button class="w-full py-4 font-semibold text-white rounded-md bg-primary">Send Message</button>
+            </form>
+
+            <div>
+              <div class="grid grid-cols-4 gap-2 mb-7">
+                <a href="https://www.instagram.com/talkify.official?igsh=NHVwcXRtMjVtZDcw" target="_blank" class="flex items-center justify-center h-20 text-4xl border rounded-md bg-primary">
+                  <iconify-icon icon="mdi:instagram" class="text-white"></iconify-icon>
+                </a>
+                <a href="https://youtube.com/@talkifyofficial?si=C2nv_FJYCuSLICIa" target="_blank" class="flex items-center justify-center h-20 text-4xl border rounded-md bg-primary">
+                  <iconify-icon icon="iconoir:youtube" class="text-white"></iconify-icon>
+                </a>
+                <a href="https://www.tiktok.com/@talkify.official?_t=8n8aZP0yBk1&_r=1" target="_blank" class="flex items-center justify-center h-20 text-4xl border rounded-md bg-primary">
+                  <iconify-icon icon="ic:baseline-tiktok" class="text-white"></iconify-icon>
+                </a>
+                <a href="https://t.me/talkify_official" target="_blank" class="flex items-center justify-center h-20 text-4xl border rounded-md bg-primary">
+                  <iconify-icon icon="ic:baseline-telegram" class="text-white"></iconify-icon>
+                </a>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3797403374724!2d112.72634007504755!3d-7.311166492696745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbd1cb925a1d%3A0x1dbecb0b2e9b059f!2sUniversitas%20Telkom%20Surabaya!5e0!3m2!1sid!2sid!4v1718287538992!5m2!1sid!2sid" width="100%" height="290px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="py-20 bg-blue-dark">
+    <div class="w-10/12 mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-5">
+        <div class="col-span-2 mb-10 md:mb-0">
+          <img src="/src/assets/img/logo-second.png" alt="" class="w-32">
+          <div class="mt-5 font-light text-lighty">Top learning experiences that create more <br> talent in the world.</div>
+        </div>
+        <div class="mb-10 md:mb-0">
+          <h4 class="font-semibold text-gray-500">Product</h4>
+          <a href="/" class="block mt-2 text-lighty">Overview</a>
+          <a href="" class="block mt-2 text-lighty">Features</a>
+          <a href="" class="block mt-2 text-lighty">Tutorials</a>
+        </div>
+        <div class="">
+          <h4 class="font-semibold text-gray-500">Company</h4>
+          <a href="" class="block mt-2 text-lighty">About us</a>
+          <a href="" class="block mt-2 text-lighty">Contact us</a>
+        </div>
+        <div class="">
+          <h4 class="font-semibold text-gray-500">Social Media</h4>
+          <a href="https://www.instagram.com/talkify.official?igsh=NHVwcXRtMjVtZDcw" target="_blank" class="block mt-2 text-lighty">Instagram</a>
+          <a href="https://youtube.com/@talkifyofficial?si=C2nv_FJYCuSLICIa" target="_blank" class="block mt-2 text-lighty">Youtube</a>
+          <a href="https://www.tiktok.com/@talkify.official?_t=8n8aZP0yBk1&_r=1" target="_blank" class="block mt-2 text-lighty">Tiktok</a>
+          <a href="https://t.me/talkify_official" target="_blank" class="block mt-2 text-lighty">Telegram</a>
+        </div>
+      </div>
+      <div class="justify-between block mt-10 text-center md:flex md:text-left">
+        <div class="font-extralight text-lighty">
+          © 2024 Talkify. All rights reserved.
+        </div>
+        <div class="block gap-3 mt-5 text-center md:mt-0 md:flex md:text-right">
+          <a href="https://www.instagram.com/talkify.official?igsh=NHVwcXRtMjVtZDcw" target="_blank" class="text-2xl">
+            <iconify-icon icon="mdi:instagram" class="text-gray-400"></iconify-icon>
+          </a>
+          <a href="https://youtube.com/@talkifyofficial?si=C2nv_FJYCuSLICIa" target="_blank" class="text-2xl">
+            <iconify-icon icon="iconoir:youtube" class="text-gray-400"></iconify-icon>
+          </a>
+          <a href="https://www.tiktok.com/@talkify.official?_t=8n8aZP0yBk1&_r=1" target="_blank" class="text-2xl">
+            <iconify-icon icon="ic:baseline-tiktok" class="text-gray-400"></iconify-icon>
+          </a>
+          <a href="https://t.me/talkify_official" target="_blank" class="text-2xl">
+            <iconify-icon icon="ic:baseline-telegram" class="text-gray-400"></iconify-icon>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Preline -->
+  <script src="./node_modules/preline/dist/preline.js"></script>
+  <!-- Iconify -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+</body>
+</html>
