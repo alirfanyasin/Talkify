@@ -4,5 +4,8 @@
   },
   "dependencies": {
     "preline": "^2.3.0"
+  },
+  "scripts" : {
+    "dev" : "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/style.css --watch"
   }
 }
